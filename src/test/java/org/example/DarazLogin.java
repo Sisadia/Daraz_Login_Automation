@@ -4,9 +4,8 @@ import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
-import org.testng.asserts.Assertion;
 
-public class Daraz extends DriverSetup{
+public class DarazLogin extends DriverSetup{
 
     public static String base_url = "https://www.daraz.com.bd/#";
 
@@ -27,7 +26,7 @@ public class Daraz extends DriverSetup{
 
         driver.findElement(By.xpath("//a[contains(text(),'Signup / Login')]")).click();
         driver.findElement(By.xpath("//input[@type='text']")).sendKeys("01631846218");
-        driver.findElement(By.xpath("//input[@type='password']")).sendKeys("demo1234");
+        driver.findElement(By.xpath("//input[@type='password']")).sendKeys("khadija58");
         System.out.println("Data Putted");
 
         //Login
